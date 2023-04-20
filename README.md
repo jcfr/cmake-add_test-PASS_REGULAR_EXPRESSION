@@ -117,3 +117,11 @@ Output from these tests are in: /tmp/cmake-add_test-PASS_REGULAR_EXPRESSION-buil
 Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
 
 ```
+
+## Proposed solutions
+
+* Introduce an opt-in policy to ensure test fail if return code is non-zero
+
+or
+
+* Introduce new test properties like `PASS_RETURN_CODE <value>` and `FAIL_RETURN_CODE <value>`
